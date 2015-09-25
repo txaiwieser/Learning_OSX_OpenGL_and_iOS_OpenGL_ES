@@ -10,10 +10,34 @@
 		E9F9C9501BB4BEB600AF35C6 /* BasicoMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9F9C94F1BB4BEB600AF35C6 /* BasicoMenu.cpp */; settings = {ASSET_TAGS = (); }; };
 		E9F9C9511BB4BED000AF35C6 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E932F6791B8CA74700A74607 /* GLUT.framework */; settings = {ASSET_TAGS = (); }; };
 		E9F9C9521BB4BED000AF35C6 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E932F67A1B8CA74700A74607 /* OpenGL.framework */; settings = {ASSET_TAGS = (); }; };
+		E9F9C95F1BB4C21200AF35C6 /* Transforma.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9F9C95E1BB4C21200AF35C6 /* Transforma.cpp */; settings = {ASSET_TAGS = (); }; };
+		E9F9C9601BB4C21A00AF35C6 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E932F6791B8CA74700A74607 /* GLUT.framework */; settings = {ASSET_TAGS = (); }; };
+		E9F9C9611BB4C21A00AF35C6 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E932F67A1B8CA74700A74607 /* OpenGL.framework */; settings = {ASSET_TAGS = (); }; };
+		E9F9C96E1BB4CBB700AF35C6 /* ObjetoComTransformacoesHierarquicas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9F9C96D1BB4CBB700AF35C6 /* ObjetoComTransformacoesHierarquicas.cpp */; settings = {ASSET_TAGS = (); }; };
+		E9F9C96F1BB4CBDF00AF35C6 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E932F6791B8CA74700A74607 /* GLUT.framework */; settings = {ASSET_TAGS = (); }; };
+		E9F9C9701BB4CBDF00AF35C6 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E932F67A1B8CA74700A74607 /* OpenGL.framework */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		E9F9C9461BB4BE9D00AF35C6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		E9F9C9551BB4C20500AF35C6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		E9F9C9641BB4CB9D00AF35C6 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -29,6 +53,10 @@
 		E932F67A1B8CA74700A74607 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		E9F9C9481BB4BE9D00AF35C6 /* BasicoMenu */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BasicoMenu; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F9C94F1BB4BEB600AF35C6 /* BasicoMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BasicoMenu.cpp; sourceTree = "<group>"; };
+		E9F9C9571BB4C20500AF35C6 /* Transform */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Transform; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9F9C95E1BB4C21200AF35C6 /* Transforma.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Transforma.cpp; sourceTree = "<group>"; };
+		E9F9C9661BB4CB9D00AF35C6 /* TransformationHierarchy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TransformationHierarchy; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9F9C96D1BB4CBB700AF35C6 /* ObjetoComTransformacoesHierarquicas.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ObjetoComTransformacoesHierarquicas.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +69,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E9F9C9541BB4C20500AF35C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9F9C9601BB4C21A00AF35C6 /* GLUT.framework in Frameworks */,
+				E9F9C9611BB4C21A00AF35C6 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9F9C9631BB4CB9D00AF35C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9F9C96F1BB4CBDF00AF35C6 /* GLUT.framework in Frameworks */,
+				E9F9C9701BB4CBDF00AF35C6 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -48,6 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				E9F9C9491BB4BE9D00AF35C6 /* BasicoMenu */,
+				E9F9C9581BB4C20500AF35C6 /* Transform */,
+				E9F9C9671BB4CB9D00AF35C6 /* TransformationHierarchy */,
 				E932F69A1B8CAA1200A74607 /* Frameworks */,
 				E932F6701B8CA6E800A74607 /* Products */,
 			);
@@ -57,6 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				E9F9C9481BB4BE9D00AF35C6 /* BasicoMenu */,
+				E9F9C9571BB4C20500AF35C6 /* Transform */,
+				E9F9C9661BB4CB9D00AF35C6 /* TransformationHierarchy */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,6 +126,22 @@
 				E9F9C94F1BB4BEB600AF35C6 /* BasicoMenu.cpp */,
 			);
 			path = BasicoMenu;
+			sourceTree = "<group>";
+		};
+		E9F9C9581BB4C20500AF35C6 /* Transform */ = {
+			isa = PBXGroup;
+			children = (
+				E9F9C95E1BB4C21200AF35C6 /* Transforma.cpp */,
+			);
+			path = Transform;
+			sourceTree = "<group>";
+		};
+		E9F9C9671BB4CB9D00AF35C6 /* TransformationHierarchy */ = {
+			isa = PBXGroup;
+			children = (
+				E9F9C96D1BB4CBB700AF35C6 /* ObjetoComTransformacoesHierarquicas.cpp */,
+			);
+			path = TransformationHierarchy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,6 +164,40 @@
 			productReference = E9F9C9481BB4BE9D00AF35C6 /* BasicoMenu */;
 			productType = "com.apple.product-type.tool";
 		};
+		E9F9C9561BB4C20500AF35C6 /* Transform */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9F9C95B1BB4C20500AF35C6 /* Build configuration list for PBXNativeTarget "Transform" */;
+			buildPhases = (
+				E9F9C9531BB4C20500AF35C6 /* Sources */,
+				E9F9C9541BB4C20500AF35C6 /* Frameworks */,
+				E9F9C9551BB4C20500AF35C6 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Transform;
+			productName = Transform;
+			productReference = E9F9C9571BB4C20500AF35C6 /* Transform */;
+			productType = "com.apple.product-type.tool";
+		};
+		E9F9C9651BB4CB9D00AF35C6 /* TransformationHierarchy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9F9C96A1BB4CB9D00AF35C6 /* Build configuration list for PBXNativeTarget "TransformationHierarchy" */;
+			buildPhases = (
+				E9F9C9621BB4CB9D00AF35C6 /* Sources */,
+				E9F9C9631BB4CB9D00AF35C6 /* Frameworks */,
+				E9F9C9641BB4CB9D00AF35C6 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TransformationHierarchy;
+			productName = TransformationHierarchy;
+			productReference = E9F9C9661BB4CB9D00AF35C6 /* TransformationHierarchy */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -108,6 +208,12 @@
 				ORGANIZATIONNAME = "Txai Wieser";
 				TargetAttributes = {
 					E9F9C9471BB4BE9D00AF35C6 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					E9F9C9561BB4C20500AF35C6 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					E9F9C9651BB4CB9D00AF35C6 = {
 						CreatedOnToolsVersion = 7.0;
 					};
 				};
@@ -125,6 +231,8 @@
 			projectRoot = "";
 			targets = (
 				E9F9C9471BB4BE9D00AF35C6 /* BasicoMenu */,
+				E9F9C9561BB4C20500AF35C6 /* Transform */,
+				E9F9C9651BB4CB9D00AF35C6 /* TransformationHierarchy */,
 			);
 		};
 /* End PBXProject section */
@@ -135,6 +243,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9F9C9501BB4BEB600AF35C6 /* BasicoMenu.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9F9C9531BB4C20500AF35C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9F9C95F1BB4C21200AF35C6 /* Transforma.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9F9C9621BB4CB9D00AF35C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9F9C96E1BB4CBB700AF35C6 /* ObjetoComTransformacoesHierarquicas.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +356,34 @@
 			};
 			name = Release;
 		};
+		E9F9C95C1BB4C20500AF35C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E9F9C95D1BB4C20500AF35C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E9F9C96B1BB4CB9D00AF35C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E9F9C96C1BB4CB9D00AF35C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -252,6 +404,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		E9F9C95B1BB4C20500AF35C6 /* Build configuration list for PBXNativeTarget "Transform" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9F9C95C1BB4C20500AF35C6 /* Debug */,
+				E9F9C95D1BB4C20500AF35C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E9F9C96A1BB4CB9D00AF35C6 /* Build configuration list for PBXNativeTarget "TransformationHierarchy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9F9C96B1BB4CB9D00AF35C6 /* Debug */,
+				E9F9C96C1BB4CB9D00AF35C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
