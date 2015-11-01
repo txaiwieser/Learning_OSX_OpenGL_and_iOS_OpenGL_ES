@@ -15,7 +15,8 @@
   GLuint _modelViewMatrixUniform;
   GLuint _projectionMatrixUniform;
   GLuint _texUniform;
-  GLuint _maskUniform;
+  GLuint _lightColorUniform;
+  GLuint _lightAmbientIntensityUniform;
 }
 
 - (GLuint)compileShader:(NSString*)shaderName withType:(GLenum)shaderType {
@@ -68,8 +69,9 @@
   self.modelViewMatrix = GLKMatrix4Identity;
   _modelViewMatrixUniform = glGetUniformLocation(_programHandle, "u_ModelViewMatrix");
   _projectionMatrixUniform = glGetUniformLocation(_programHandle, "u_ProjectionMatrix");
-  _texUniform = glGetUniformLocation(self.programHandle, "u_Texture");
-  _maskUniform = glGetUniformLocation(self.programHandle, "u_Mask");
+  _texUniform = glGetUniformLocation(_programHandle, "u_Texture");
+  _lightColorUniform = glGetUniformLocation(_programHandle, "u_Light.Color");
+  _lightAmbientIntensityUniform = glGetUniformLocation(_programHandle, "u_Light.AmbientIntensity");
   
   GLint linkSuccess;
   glGetProgramiv(_programHandle, GL_LINK_STATUS, &linkSuccess);
@@ -84,36 +86,21 @@
 
 - (void)prepareToDraw {
   glUseProgram(_programHandle);
-  
   glUniformMatrix4fv(_modelViewMatrixUniform, 1, 0, self.modelViewMatrix.m);
   glUniformMatrix4fv(_projectionMatrixUniform, 1, 0, self.projectionMatrix.m);
   
-//  glUniform3f(_directionalLightColorUniform, self.lightColor.r, self.lightColor.g, self.lightColor.b);
-//  glUniform1f(_directionalLightAmbientIntensityUniform, self.ambientIntensity);  
-//  glUniform3f(_directionalLightDirectionUniform, self.lightDirection.x, self.lightDirection.y, self.lightDirection.z);
-//  glUniform1f(_directionalLightDiffuseIntensityUniform, self.diffuseIntensity);
-//  glUniform1f(_matSpecularIntensityUniform, self.specularIntensity);
-//  glUniform1f(_specularPowerUniform, self.specularPower);
-  
-  // ...
   glActiveTexture(GL_TEXTURE1);
   glBindTexture(GL_TEXTURE_2D, self.texture);
   glUniform1i(_texUniform, 1);
   
-  glActiveTexture(GL_TEXTURE0);
-  glBindTexture(GL_TEXTURE_2D, self.mask);
-  glUniform1i(_maskUniform, 0);
+  glUniform3f(_lightColorUniform, 1, 1, 1);
+  glUniform1f(_lightAmbientIntensityUniform, 0.8);
+  
 }
 
 - (instancetype)initWithVertexShader:(NSString *)vertexShader fragmentShader:
 (NSString *)fragmentShader {
   if ((self = [super init])) {
-//    self.lightColor = GLKVector3Make(1, 1, 1);
-//    self.lightDirection = GLKVector3Normalize(GLKVector3Make(0, 1, -1));
-//    self.ambientIntensity = 0.1;
-//    self.diffuseIntensity = 0.7;
-//    self.specularIntensity = 2.0;
-//    self.specularPower = 8;
     [self compileVertexShader:vertexShader fragmentShader:fragmentShader];
   }
   return self;

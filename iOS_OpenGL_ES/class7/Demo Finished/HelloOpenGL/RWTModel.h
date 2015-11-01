@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "RWTVertex.h"
-#import <OpenGLES/ES2/glext.h>
 
 @class RWTBaseEffect;
 @import GLKit;
@@ -22,12 +21,10 @@
 @property (nonatomic) float rotationZ;
 @property (nonatomic) float scale;
 @property (nonatomic) GLuint texture;
-@property (nonatomic) GLuint mask;
 
 - (instancetype)initWithName:(char *)name shader:(RWTBaseEffect *)shader vertices:(RWTVertex *)vertices vertexCount:(unsigned int)vertexCount inidices:(GLubyte *)indices indexCount:(unsigned int)indexCount;
 - (void)renderWithParentModelViewMatrix:(GLKMatrix4)parentModelViewMatrix;
 - (void)updateWithDelta:(NSTimeInterval)dt;
-- (GLKMatrix4)modelMatrix;
-- (GLuint)loadTexture:(NSString *)filename;
+- (void)loadTexture:(NSString *)filename;
 
 @end
