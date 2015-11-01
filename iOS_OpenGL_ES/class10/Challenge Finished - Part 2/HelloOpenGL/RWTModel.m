@@ -8,6 +8,7 @@
 
 #import "RWTModel.h"
 #import "RWTBaseEffect.h"
+#import <OpenGLES/ES2/glext.h>
 
 @implementation RWTModel {
   char *_name;

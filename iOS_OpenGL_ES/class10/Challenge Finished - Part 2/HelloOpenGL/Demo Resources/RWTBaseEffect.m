@@ -8,6 +8,7 @@
 
 #import "RWTBaseEffect.h"
 #import "RWTVertex.h"
+#import <OpenGLES/ES2/glext.h>
 
 @implementation RWTBaseEffect {
   GLuint _programHandle;
