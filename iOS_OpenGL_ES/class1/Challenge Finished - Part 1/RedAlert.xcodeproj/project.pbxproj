@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		35FE232F18D791CE00EFDF7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35FE232E18D791CE00EFDF7C /* Foundation.framework */; };
+		35FE233118D791CE00EFDF7C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35FE233018D791CE00EFDF7C /* CoreGraphics.framework */; };
+		35FE233318D791CE00EFDF7C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35FE233218D791CE00EFDF7C /* UIKit.framework */; };
+		35FE233918D791CE00EFDF7C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 35FE233718D791CE00EFDF7C /* InfoPlist.strings */; };
+		35FE233B18D791CE00EFDF7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FE233A18D791CE00EFDF7C /* main.m */; };
+		35FE233F18D791CE00EFDF7C /* RWTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FE233E18D791CE00EFDF7C /* RWTAppDelegate.m */; };
+		35FE234218D791CE00EFDF7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35FE234018D791CE00EFDF7C /* Main.storyboard */; };
+		35FE234518D791CE00EFDF7C /* RWTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FE234418D791CE00EFDF7C /* RWTViewController.m */; };
+		35FE234718D791CE00EFDF7C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35FE234618D791CE00EFDF7C /* Images.xcassets */; };
+		35FE234E18D791CE00EFDF7C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35FE234D18D791CE00EFDF7C /* XCTest.framework */; };
+		35FE234F18D791CE00EFDF7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35FE232E18D791CE00EFDF7C /* Foundation.framework */; };
+		35FE235018D791CE00EFDF7C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35FE233218D791CE00EFDF7C /* UIKit.framework */; };
+		35FE235818D791CE00EFDF7C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 35FE235618D791CE00EFDF7C /* InfoPlist.strings */; };
+		35FE235A18D791CE00EFDF7C /* RedAlertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FE235918D791CE00EFDF7C /* RedAlertTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		35FE235118D791CE00EFDF7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35FE232318D791CE00EFDF7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35FE232A18D791CE00EFDF7C;
+			remoteInfo = RedAlert;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		35FE232B18D791CE00EFDF7C /* RedAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		35FE232E18D791CE00EFDF7C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		35FE233018D791CE00EFDF7C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		35FE233218D791CE00EFDF7C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		35FE233618D791CE00EFDF7C /* RedAlert-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RedAlert-Info.plist"; sourceTree = "<group>"; };
+		35FE233818D791CE00EFDF7C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		35FE233A18D791CE00EFDF7C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		35FE233C18D791CE00EFDF7C /* RedAlert-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RedAlert-Prefix.pch"; sourceTree = "<group>"; };
+		35FE233D18D791CE00EFDF7C /* RWTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RWTAppDelegate.h; sourceTree = "<group>"; };
+		35FE233E18D791CE00EFDF7C /* RWTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RWTAppDelegate.m; sourceTree = "<group>"; };
+		35FE234118D791CE00EFDF7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		35FE234318D791CE00EFDF7C /* RWTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RWTViewController.h; sourceTree = "<group>"; };
+		35FE234418D791CE00EFDF7C /* RWTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RWTViewController.m; sourceTree = "<group>"; };
+		35FE234618D791CE00EFDF7C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		35FE234C18D791CE00EFDF7C /* RedAlertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedAlertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		35FE234D18D791CE00EFDF7C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		35FE235518D791CE00EFDF7C /* RedAlertTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RedAlertTests-Info.plist"; sourceTree = "<group>"; };
+		35FE235718D791CE00EFDF7C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		35FE235918D791CE00EFDF7C /* RedAlertTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedAlertTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35FE232818D791CE00EFDF7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35FE233118D791CE00EFDF7C /* CoreGraphics.framework in Frameworks */,
+				35FE233318D791CE00EFDF7C /* UIKit.framework in Frameworks */,
+				35FE232F18D791CE00EFDF7C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35FE234918D791CE00EFDF7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35FE234E18D791CE00EFDF7C /* XCTest.framework in Frameworks */,
+				35FE235018D791CE00EFDF7C /* UIKit.framework in Frameworks */,
+				35FE234F18D791CE00EFDF7C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35FE232218D791CE00EFDF7C = {
+			isa = PBXGroup;
+			children = (
+				35FE233418D791CE00EFDF7C /* RedAlert */,
+				35FE235318D791CE00EFDF7C /* RedAlertTests */,
+				35FE232D18D791CE00EFDF7C /* Frameworks */,
+				35FE232C18D791CE00EFDF7C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		35FE232C18D791CE00EFDF7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35FE232B18D791CE00EFDF7C /* RedAlert.app */,
+				35FE234C18D791CE00EFDF7C /* RedAlertTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35FE232D18D791CE00EFDF7C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35FE232E18D791CE00EFDF7C /* Foundation.framework */,
+				35FE233018D791CE00EFDF7C /* CoreGraphics.framework */,
+				35FE233218D791CE00EFDF7C /* UIKit.framework */,
+				35FE234D18D791CE00EFDF7C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		35FE233418D791CE00EFDF7C /* RedAlert */ = {
+			isa = PBXGroup;
+			children = (
+				35FE233D18D791CE00EFDF7C /* RWTAppDelegate.h */,
+				35FE233E18D791CE00EFDF7C /* RWTAppDelegate.m */,
+				35FE234018D791CE00EFDF7C /* Main.storyboard */,
+				35FE234318D791CE00EFDF7C /* RWTViewController.h */,
+				35FE234418D791CE00EFDF7C /* RWTViewController.m */,
+				35FE234618D791CE00EFDF7C /* Images.xcassets */,
+				35FE233518D791CE00EFDF7C /* Supporting Files */,
+			);
+			path = RedAlert;
+			sourceTree = "<group>";
+		};
+		35FE233518D791CE00EFDF7C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				35FE233618D791CE00EFDF7C /* RedAlert-Info.plist */,
+				35FE233718D791CE00EFDF7C /* InfoPlist.strings */,
+				35FE233A18D791CE00EFDF7C /* main.m */,
+				35FE233C18D791CE00EFDF7C /* RedAlert-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		35FE235318D791CE00EFDF7C /* RedAlertTests */ = {
+			isa = PBXGroup;
+			children = (
+				35FE235918D791CE00EFDF7C /* RedAlertTests.m */,
+				35FE235418D791CE00EFDF7C /* Supporting Files */,
+			);
+			path = RedAlertTests;
+			sourceTree = "<group>";
+		};
+		35FE235418D791CE00EFDF7C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				35FE235518D791CE00EFDF7C /* RedAlertTests-Info.plist */,
+				35FE235618D791CE00EFDF7C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		35FE232A18D791CE00EFDF7C /* RedAlert */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35FE235D18D791CE00EFDF7C /* Build configuration list for PBXNativeTarget "RedAlert" */;
+			buildPhases = (
+				35FE232718D791CE00EFDF7C /* Sources */,
+				35FE232818D791CE00EFDF7C /* Frameworks */,
+				35FE232918D791CE00EFDF7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RedAlert;
+			productName = RedAlert;
+			productReference = 35FE232B18D791CE00EFDF7C /* RedAlert.app */;
+			productType = "com.apple.product-type.application";
+		};
+		35FE234B18D791CE00EFDF7C /* RedAlertTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35FE236018D791CE00EFDF7C /* Build configuration list for PBXNativeTarget "RedAlertTests" */;
+			buildPhases = (
+				35FE234818D791CE00EFDF7C /* Sources */,
+				35FE234918D791CE00EFDF7C /* Frameworks */,
+				35FE234A18D791CE00EFDF7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35FE235218D791CE00EFDF7C /* PBXTargetDependency */,
+			);
+			name = RedAlertTests;
+			productName = RedAlertTests;
+			productReference = 35FE234C18D791CE00EFDF7C /* RedAlertTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		35FE232318D791CE00EFDF7C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RWT;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Razeware LLC";
+				TargetAttributes = {
+					35FE234B18D791CE00EFDF7C = {
+						TestTargetID = 35FE232A18D791CE00EFDF7C;
+					};
+				};
+			};
+			buildConfigurationList = 35FE232618D791CE00EFDF7C /* Build configuration list for PBXProject "RedAlert" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 35FE232218D791CE00EFDF7C;
+			productRefGroup = 35FE232C18D791CE00EFDF7C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				35FE232A18D791CE00EFDF7C /* RedAlert */,
+				35FE234B18D791CE00EFDF7C /* RedAlertTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		35FE232918D791CE00EFDF7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35FE234718D791CE00EFDF7C /* Images.xcassets in Resources */,
+				35FE233918D791CE00EFDF7C /* InfoPlist.strings in Resources */,
+				35FE234218D791CE00EFDF7C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35FE234A18D791CE00EFDF7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35FE235818D791CE00EFDF7C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35FE232718D791CE00EFDF7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35FE234518D791CE00EFDF7C /* RWTViewController.m in Sources */,
+				35FE233F18D791CE00EFDF7C /* RWTAppDelegate.m in Sources */,
+				35FE233B18D791CE00EFDF7C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35FE234818D791CE00EFDF7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35FE235A18D791CE00EFDF7C /* RedAlertTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		35FE235218D791CE00EFDF7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35FE232A18D791CE00EFDF7C /* RedAlert */;
+			targetProxy = 35FE235118D791CE00EFDF7C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		35FE233718D791CE00EFDF7C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35FE233818D791CE00EFDF7C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		35FE234018D791CE00EFDF7C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35FE234118D791CE00EFDF7C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		35FE235618D791CE00EFDF7C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35FE235718D791CE00EFDF7C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		35FE235B18D791CE00EFDF7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		35FE235C18D791CE00EFDF7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		35FE235E18D791CE00EFDF7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RedAlert/RedAlert-Prefix.pch";
+				INFOPLIST_FILE = "RedAlert/RedAlert-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		35FE235F18D791CE00EFDF7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RedAlert/RedAlert-Prefix.pch";
+				INFOPLIST_FILE = "RedAlert/RedAlert-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		35FE236118D791CE00EFDF7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RedAlert.app/RedAlert";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RedAlert/RedAlert-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RedAlertTests/RedAlertTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		35FE236218D791CE00EFDF7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RedAlert.app/RedAlert";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RedAlert/RedAlert-Prefix.pch";
+				INFOPLIST_FILE = "RedAlertTests/RedAlertTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		35FE232618D791CE00EFDF7C /* Build configuration list for PBXProject "RedAlert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35FE235B18D791CE00EFDF7C /* Debug */,
+				35FE235C18D791CE00EFDF7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35FE235D18D791CE00EFDF7C /* Build configuration list for PBXNativeTarget "RedAlert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35FE235E18D791CE00EFDF7C /* Debug */,
+				35FE235F18D791CE00EFDF7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		35FE236018D791CE00EFDF7C /* Build configuration list for PBXNativeTarget "RedAlertTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35FE236118D791CE00EFDF7C /* Debug */,
+				35FE236218D791CE00EFDF7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 35FE232318D791CE00EFDF7C /* Project object */;
+}
