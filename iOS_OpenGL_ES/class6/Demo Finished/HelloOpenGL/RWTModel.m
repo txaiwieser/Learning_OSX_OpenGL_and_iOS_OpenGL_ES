@@ -31,9 +31,7 @@
     self.rotationX = 0;
     self.rotationY = 0;
     self.rotationZ = 0;
-    self.scaleX = 1.0;
-    self.scaleY = 1.0;
-    self.scaleZ = 1.0;
+    self.scale = 1.0;
     
     glGenVertexArraysOES(1, &_vao);
     glBindVertexArrayOES(_vao);
@@ -53,6 +51,8 @@
     glVertexAttribPointer(RWTVertexAttribPosition, 3, GL_FLOAT, GL_FALSE, sizeof(RWTVertex), (const GLvoid *) offsetof(RWTVertex, Position));
     glEnableVertexAttribArray(RWTVertexAttribColor);
     glVertexAttribPointer(RWTVertexAttribColor, 4, GL_FLOAT, GL_FALSE, sizeof(RWTVertex), (const GLvoid *) offsetof(RWTVertex, Color));
+    glEnableVertexAttribArray(RWTVertexAttribTexCoord);
+    glVertexAttribPointer(RWTVertexAttribTexCoord, 2, GL_FLOAT, GL_FALSE, sizeof(RWTVertex), (const GLvoid *) offsetof(RWTVertex, TexCoord));
     
     glBindVertexArrayOES(0);
     glBindBuffer(GL_ARRAY_BUFFER, 0);
@@ -62,32 +62,44 @@
   return self;
 }
 
+- (GLKMatrix4)modelMatrix {
+  GLKMatrix4 modelMatrix = GLKMatrix4Identity;
+  modelMatrix = GLKMatrix4Translate(modelMatrix, self.position.x, self.position.y, self.position.z);
+  modelMatrix = GLKMatrix4Rotate(modelMatrix, self.rotationX, 1, 0, 0);
+  modelMatrix = GLKMatrix4Rotate(modelMatrix, self.rotationY, 0, 1, 0);
+  modelMatrix = GLKMatrix4Rotate(modelMatrix, self.rotationZ, 0, 0, 1);
+  modelMatrix = GLKMatrix4Scale(modelMatrix, self.scale, self.scale, self.scale);
+  return modelMatrix;
+}
+
 - (void)renderWithParentModelViewMatrix:(GLKMatrix4)parentModelViewMatrix {
-    
+
   GLKMatrix4 modelViewMatrix = GLKMatrix4Multiply(parentModelViewMatrix, [self modelMatrix]);
   _shader.modelViewMatrix = modelViewMatrix;
+  _shader.texture = self.texture;
   [_shader prepareToDraw];
-    
+
   glBindVertexArrayOES(_vao);
   glDrawElements(GL_TRIANGLES, _indexCount, GL_UNSIGNED_BYTE, 0);
   glBindVertexArrayOES(0);
 
 }
 
-- (GLKMatrix4)modelMatrix {
-    
-    GLKMatrix4 modelMatrix = GLKMatrix4Identity;
-    modelMatrix = GLKMatrix4Translate(modelMatrix, self.position.x, self.position.y, self.position.z);
-    modelMatrix = GLKMatrix4Rotate(modelMatrix, self.rotationX, 1, 0, 0);
-    modelMatrix = GLKMatrix4Rotate(modelMatrix, self.rotationY, 0, 1, 0);
-    modelMatrix = GLKMatrix4Rotate(modelMatrix, self.rotationZ, 0, 0, 1);
-    modelMatrix = GLKMatrix4Scale(modelMatrix, self.scaleX, self.scaleY, self.scaleZ);
-    return modelMatrix;
-    
+- (void)updateWithDelta:(NSTimeInterval)dt {
+
 }
 
-- (void)updateWithDelta:(GLfloat)aDelta {
-  self.position = GLKVector3Add(self.position, GLKVector3MultiplyScalar(self.velocity, aDelta));
+- (void)loadTexture:(NSString *)filename {
+  NSError *error;
+  NSString *path = [[NSBundle mainBundle] pathForResource:filename ofType:nil];
+  
+  NSDictionary *options = @{ GLKTextureLoaderOriginBottomLeft: @YES };
+  GLKTextureInfo *info = [GLKTextureLoader textureWithContentsOfFile:path options:options error:&error];
+  if (info == nil) {
+    NSLog(@"Error loading file: %@", error.localizedDescription);
+  } else {
+    self.texture = info.name;
+  }
 }
 
 @end
