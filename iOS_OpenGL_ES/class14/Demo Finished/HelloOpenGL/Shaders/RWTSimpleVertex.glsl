@@ -13,7 +13,7 @@ varying lowp vec3 frag_Position;
 
 void main(void) {
   frag_Color = a_Color;
-  gl_Position = u_ProjectionMatrix * u_ModelViewMatrix * a_Position;
+    gl_Position = u_ProjectionMatrix * u_ModelViewMatrix * a_Position;
   frag_TexCoord = a_TexCoord;
   frag_Normal = (u_ModelViewMatrix * vec4(a_Normal, 0.0)).xyz;
   frag_Position = (u_ModelViewMatrix * a_Position).xyz;

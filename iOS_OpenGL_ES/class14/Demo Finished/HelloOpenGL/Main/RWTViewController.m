@@ -9,7 +9,7 @@
 #import "RWTViewController.h"
 #import "RWTVertex.h"
 #import "RWTBaseEffect.h"
-#import "RWTGameScene.h"
+#import "RWTTestScene.h"
 #import "RWTDirector.h"
 
 @interface RWTViewController ()
@@ -18,7 +18,7 @@
 
 @implementation RWTViewController {
   RWTBaseEffect *_shader;
-  RWTGameScene *_scene;
+  RWTTestScene *_scene;
 }
 
 - (void)setupScene {
@@ -27,7 +27,7 @@
   [[RWTDirector sharedInstance] playBackgroundMusic:@"bulletstorm_bg_v1.mp3"];
 
   _shader = [[RWTBaseEffect alloc] initWithVertexShader:@"RWTSimpleVertex.glsl" fragmentShader:@"RWTSimpleFragment.glsl"];
-  _scene = [[RWTGameScene alloc] initWithShader:_shader];
+  _scene = [[RWTTestScene alloc] initWithShader:_shader];
   _shader.projectionMatrix = GLKMatrix4MakePerspective(GLKMathDegreesToRadians(85.0), self.view.bounds.size.width / self.view.bounds.size.height, 1, 150);
   
   [RWTDirector sharedInstance].scene = _scene;

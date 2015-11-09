@@ -111,7 +111,6 @@
   glUniform1f(_matSpecularIntensityUniform, 2.0);
   glUniform1f(_shininessUniform, 8.0);
   glUniform4f(_matColorUniform, self.matColor.r, self.matColor.g, self.matColor.b, self.matColor.a);
-  
 }
 
 - (instancetype)initWithVertexShader:(NSString *)vertexShader fragmentShader:

@@ -32,5 +32,5 @@ void main(void) {
   lowp float SpecularFactor = pow(max(0.0, -dot(Reflection, Eye)), u_Shininess);
   lowp vec3 SpecularColor = u_Light.Color * u_MatSpecularIntensity * SpecularFactor;
 
-  gl_FragColor = u_MatColor * texture2D(u_Texture, frag_TexCoord) * vec4((AmbientColor + DiffuseColor + SpecularColor), 1.0);
+    gl_FragColor = vec4(0.0, 1.0, 0.0, 1.0);//u_MatColor * texture2D(u_Texture, frag_TexCoord) * vec4((AmbientColor + DiffuseColor + SpecularColor), 1.0);
 }
